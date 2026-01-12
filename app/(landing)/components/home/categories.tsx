@@ -21,11 +21,11 @@ const categoryList = [
     },
     {
         name: "Badminton",
-        imgUrl: "category-Badminton.png",
+        imgUrl: "category-badminton.png",
     },
     {
         name: "Swimming",
-        imgUrl: "category-Swimming.png",
+        imgUrl: "category-swimming.png",
     },
 ]
 
