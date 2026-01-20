@@ -15,12 +15,10 @@ const HeroSection = () => {
                     <p className="w-1/2 mt-10 leading-loose">
                         Engineered for endurance and designed for speed. Experience gear that moves as fast as you do. Premium fabrics. Unmatched comfort. Limitless motion.
                     </p>
-                    <p>
                         <div className="flex gap-5 mt-14">
                             <Button>Explore More <FiFastForward /> </Button>
                             <Button variant="ghost">Watch Video {" "} <Image src="/images/icon-play-video.svg" alt="icon playvideo" width={29} height={29} /></Button>
                         </div>
-                    </p>
                 </div>
                 <Image src="/images/img-hero.png" width={700} height={950} alt="image sporton hero" className="absolute -right-5 top-1/2 -translate-y-1/2" />
             </div>
