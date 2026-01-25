@@ -6,15 +6,12 @@ import Image from "next/image";
 import priceFormatter from "@/app/utils/price-fomatter";
 import { FiCheck, FiX } from "react-icons/fi";
 
-type TCategoryModalProps = {
+type TTransactionModalProps = {
     isOpen: boolean;
     onClose: () => void;
 };
 
-const CategoryModal = ({isOpen, onClose}: TCategoryModalProps) => {
-    const [imageFile, setImageFile] = useState<File | null>(null);
-    const [imagePreview, setImagePreview] = useState<string | null>(null)
-
+const TransactionModal = ({isOpen, onClose}: TTransactionModalProps) => {
     return (
         <Modal isOpen={isOpen} onClose={onClose} title="Verify Transactions">
             <div className="flex gap-6">
@@ -70,4 +67,4 @@ const CategoryModal = ({isOpen, onClose}: TCategoryModalProps) => {
     );
 };
 
-export default CategoryModal;
+export default TransactionModal;

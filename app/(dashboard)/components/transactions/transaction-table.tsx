@@ -1,5 +1,4 @@
 import priceFormatter from "@/app/utils/price-fomatter";
-import Image from "next/image";
 import { FiEdit2, FiEye, FiTrash2 } from "react-icons/fi";
 
 const transactionData = [
@@ -26,11 +25,11 @@ const transactionData = [
     },
 ];
 
-type TCategoryTableProps = {
+type TTransactionTableProps = {
     onViewDetails: () => void;
 }
 
-const CategoryTable = ({onViewDetails}:TCategoryTableProps) => {
+const TransactionTable = ({onViewDetails}:TTransactionTableProps) => {
 
     const getStatusColor = (status: string) => {
         switch (status.toLowerCase()) {
@@ -82,4 +81,4 @@ const CategoryTable = ({onViewDetails}:TCategoryTableProps) => {
     )
 }
 
-export default CategoryTable;
+export default TransactionTable;
